@@ -1,0 +1,22 @@
+.form_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+    background-color: #45f3ff;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.form_button:hover {
+    background-color: #ff01fa;
+}

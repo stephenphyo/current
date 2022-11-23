@@ -1,0 +1,74 @@
+.regsuccess_form {
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+.regsuccess_form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 450px;
+    height: 300px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+}
+
+.regsuccess_form::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 450px;
+    height: 300px;
+    background: linear-gradient(0deg, transparent, #ff01fa, #ff01fa);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.regsuccess_form_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    inset: 5px;
+    border-radius: 6px;
+    background-color: #28292d;
+    z-index: 2;
+}
+
+.regsuccess_form_container .form_input {
+    margin-top: 5px;
+}
+
+.regsuccess_form_container .form_button {
+    margin-top: 40px;
+}
+
+.regsuccess_form_container .form_link {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-family: 'Poppins';
+}
+
+.regsuccess_form_container .form_text {
+    margin-bottom: 30px;
+    ;
+}
+
+.regsuccess_form_container .form_text #email {
+    margin: 5px 0;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #45f3ff;
+}

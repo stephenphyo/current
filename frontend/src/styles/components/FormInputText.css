@@ -1,0 +1,62 @@
+.form_input_text {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.form_input_text input {
+    position: relative;
+    width: 100%;
+    padding: 18px 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    color: #45f3ff;
+    background-color: transparent;
+}
+
+.form_input_text #label {
+    position: absolute;
+    left: 0;
+    padding: 18px 10px;
+    font-family: 'Poppins';
+    font-size: 0.9em;
+    letter-spacing: 0.025em;
+    pointer-events: none;
+    user-select: none;
+    color: #45f3ff;
+    transition: 0.5s;
+}
+
+.form_input_text hr {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    user-select: none;
+    background-color: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.form_input_text input:focus,
+.form_input_text input:valid {
+    padding: 26px 10px 10px 10px;
+}
+
+.form_input_text input:focus~#label,
+.form_input_text input:valid~#label {
+    padding: 5px 10px;
+    font-size: 0.7em;
+    color: #ff01fa;
+}
+
+.form_input_text input:focus~hr,
+.form_input_text input:valid~hr {
+    background-color: #ff01fa;
+}

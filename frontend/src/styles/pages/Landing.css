@@ -1,0 +1,90 @@
+.landing_form {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+    user-select: none;
+}
+
+.landing_form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+}
+
+.landing_form::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(0deg, transparent, #ff01fa, #ff01fa);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.landing_form_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    inset: 5px;
+    border-radius: 6px;
+    background-color: #28292d;
+    z-index: 2;
+}
+
+.landing_form .form_header {
+    gap: 20px;
+}
+
+.landing_form .form_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    margin-top: 35px;
+}
+
+#btn_login, #btn_register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 7px 20px;
+    font-family: 'Poppins';
+    border-radius: 20px;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+#btn_login {
+    color: #45f3ff;
+    border: 2px solid #45f3ff;
+}
+
+#btn_login:hover {
+    color: #1e1e1e;
+    background-color: #45f3ff;
+}
+
+#btn_register {
+    color: #ff01fa;
+    border: 2px solid #ff01fa;
+}
+
+#btn_register:hover {
+    color: #fafafa;
+    background-color: #ff01fa;
+}

@@ -1,0 +1,9 @@
+.form_error {
+    background-color: transparent;
+    margin-top: 6px;
+    margin-left: 8px;
+    letter-spacing: 0.04em;
+    font-family: 'Raleway';
+    font-size: 11px;
+    color: #f71b2f;
+}

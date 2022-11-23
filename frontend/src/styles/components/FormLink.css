@@ -1,0 +1,10 @@
+.form_link {
+    font-family: 'Courgette';
+    color: #45f3ff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form_link:hover {
+    color: #ff01fa;
+}

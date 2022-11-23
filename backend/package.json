@@ -1,0 +1,23 @@
+{
+  "name": "web-001-authentication-backend",
+  "version": "1.0.0",
+  "description": "WEB-001 - AUTHENTICATION - Backend Service",
+  "main": "Server.js",
+  "scripts": {
+    "start": "nodemon Server.js"
+  },
+  "keywords": [
+    "web-001",
+    "auth"
+  ],
+  "author": "STEPHEN PHYO",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.2"
+  }
+}

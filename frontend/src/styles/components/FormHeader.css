@@ -1,0 +1,24 @@
+.form_header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_header h2 {
+    font-family: 'Sevillana';
+    font-size: 40px;
+    color: #45f3ff;
+}
+
+.form_header h3 {
+    font-family: 'Tangerine';
+    font-size: 32px;
+    color: #45f3ff;
+}
+
+.form_header h5 {
+    font-family: 'Tangerine';
+    font-size: 24px;
+    color: #ff01fa;
+}

@@ -1,0 +1,10 @@
+.form_text {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    font-family: 'Prata';
+    font-size: 13px;
+    color: #edd2a4;
+    gap: 5px;
+}

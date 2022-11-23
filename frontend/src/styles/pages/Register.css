@@ -1,0 +1,123 @@
+.register_form {
+    position: relative;
+    width: 380px;
+    height: 900px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+.register_form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+}
+
+.register_form::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #ff01fa, #ff01fa);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.register_form_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px 30px;
+    inset: 5px;
+    border-radius: 6px;
+    background-color: #28292d;
+    z-index: 2;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.avatar_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 2px solid #ff01fa;
+    border-radius: 50%;
+}
+
+.avatar_container_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #45f3ff;
+    border-radius: 50%;
+}
+
+.avatar img {
+    width: 60px;
+}
+
+.register_form_container .form_input_text,
+.register_form_container .form_input_password {
+    margin-top: 2px;
+}
+
+.register_form_container input[type='date']:invalid {
+    color: transparent;
+}
+
+.register_form_container input[type='date']:focus {
+    color: #45f3ff;
+}
+
+.register_form_container .form_button {
+    margin-top: 25px;
+}
+
+.register_form_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+    user-select: none;
+}
+
+.register_form_footer .label {
+    color: #8f8f8f;
+}
+
+.register_form_footer .register_form_link {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+/* Animation */
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

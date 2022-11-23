@@ -1,0 +1,212 @@
+.login_form {
+    position: relative;
+    width: 380px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+.login_form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+}
+
+.login_form::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #ff01fa, #ff01fa);
+    transform-origin: bottom right;
+    animation: animation 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.login_form_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px 30px;
+    inset: 5px;
+    border-radius: 6px;
+    background-color: #28292d;
+    z-index: 2;
+}
+
+.forgot_password {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+    user-select: none;
+}
+
+.login_form_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+    user-select: none;
+}
+
+.login_form_footer .label {
+    color: #8f8f8f;
+}
+
+.login_form_footer .login_form_link {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.login_form_options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 330px;
+    padding: 50px 0;
+    user-select: none;
+    border-top: 3px solid #ff01fa;
+    border-radius: 15px 15px 0 0;
+    background-color: #28292d;
+    transition: 0.5s ease-out;
+    z-index: 10;
+}
+
+.login_form_options.close {
+    background-color: transparent;
+    transform: translateY(82%);
+}
+
+.login_form_options_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -22px;
+    width: 44px;
+    height: 44px;
+    user-select: none;
+    border: 2px solid #ff01fa;
+    border-radius: 50%;
+    font-family: 'Times New Roman';
+    font-size: 12px;
+    font-weight: bold;
+    color: #45f3ff;
+    background-color: #28292d;
+    cursor: pointer;
+}
+
+.login_form_options_button_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 85%;
+    border: 1px solid #45f3ff;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.login_form_options_button_inner:hover {
+    color: #28292d;
+    background-color: #45f3ff;
+}
+
+.login_form_options_container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+    padding: 20px;
+    gap: 30px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+.login_form_options_container .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #ff01fa;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.option .option_inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3px 23px;
+    border: 1px solid #45f3ff;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.option_logo {
+    width: 28px;
+    border: 0.15em solid transparent;
+    border-radius: 50%;
+}
+
+.option_text {
+    margin-left: 20px;
+    color: #45f3ff;
+}
+
+.option:hover .option_logo {
+    border: 0.15em solid #fafafa;
+    background-color: #fafafa;
+}
+
+.option:hover .option_text {
+    color: #fafafa;
+}
+
+.option:hover .option_inner {
+    border: 1px solid transparent;
+}
+
+.option:hover .option_inner.facebook {
+    background-color: #1877f2;
+}
+
+.option:hover .option_inner.google {
+    background-color: #d34836;
+}
+
+/* Animation */
+@keyframes animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
